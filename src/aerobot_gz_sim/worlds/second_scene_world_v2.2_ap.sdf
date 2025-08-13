@@ -1,0 +1,273 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <world name="iris_runway">
+    <physics name="1ms" type="ignore">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+
+    <plugin filename="gz-sim-physics-system"
+      name="gz::sim::systems::Physics">
+    </plugin>
+    <plugin
+      filename="gz-sim-sensors-system"
+      name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <plugin filename="gz-sim-user-commands-system"
+      name="gz::sim::systems::UserCommands">
+    </plugin>
+    <plugin filename="gz-sim-scene-broadcaster-system"
+      name="gz::sim::systems::SceneBroadcaster">
+    </plugin>
+    <plugin filename="gz-sim-imu-system"
+      name="gz::sim::systems::Imu">
+    </plugin>
+    <plugin filename="gz-sim-navsat-system"
+      name="gz::sim::systems::NavSat">
+    </plugin>
+
+    <scene>
+      <ambient>1.0 1.0 1.0</ambient>
+      <background>0.8 0.8 0.8</background>
+      <sky></sky>
+    </scene>
+
+    <spherical_coordinates>
+      <latitude_deg>-35.363262</latitude_deg>
+      <longitude_deg>149.165237</longitude_deg>
+      <elevation>584</elevation>
+      <heading_deg>0</heading_deg>
+      <surface_model>EARTH_WGS84</surface_model>
+    </spherical_coordinates>
+
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.8 0.8 0.8 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+
+    <model name="axes">
+      <static>1</static>
+      <link name="link">
+        <visual name="r">
+          <cast_shadows>0</cast_shadows>
+          <pose>5 0 0.1 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>10 0.01 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 0 0 0.8</ambient>
+            <diffuse>1 0 0 0.8</diffuse>
+            <emissive>1 0 0 0.8</emissive>
+            <specular>0.5 0.5 0.5 0.8</specular>
+          </material>
+        </visual>
+        <visual name="g">
+          <cast_shadows>0</cast_shadows>
+          <pose>0 5 0.1 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 10 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0 1 0 0.8</ambient>
+            <diffuse>0 1 0 0.8</diffuse>
+            <emissive>0 1 0 0.8</emissive>
+            <specular>0.5 0.5 0.5 0.8</specular>
+          </material>
+        </visual>
+        <visual name="b">
+          <cast_shadows>0</cast_shadows>
+          <pose>0 0 5.1 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 0.01 10</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0 0 1 0.8</ambient>
+            <diffuse>0 0 1 0.8</diffuse>
+            <emissive>0 0 1 0.8</emissive>
+            <specular>0.5 0.5 0.5 0.8</specular>
+          </material>
+        </visual>
+        <sensor name="navsat_sensor" type="navsat">
+          <always_on>1</always_on>
+          <update_rate>1</update_rate>
+        </sensor>
+      </link>
+    </model>
+        
+        <include>
+            <uri>model://ground_my</uri>
+        </include>
+        
+        <include>
+            <name>walls</name>
+            <uri>model://house_scene_2_walls_out</uri>
+            <static>true</static>
+            <pose>0 12.5 0 0 0 0</pose>
+        </include>
+        
+        <include>
+            <name>wall1</name>
+            <uri>model://house_scene_2_wall_1</uri>
+            <static>true</static>
+            <pose>0 12.5 0 0 0 0</pose>
+        </include>
+        
+        <include>
+            <name>wall2</name>
+            <uri>model://house_scene_2_wall_2</uri>
+            <static>true</static>
+            <pose>0 12.5 0 0 0 0</pose>
+        </include>
+        
+        <include>
+            <name>wall3</name>
+            <uri>model://house_scene_2_wall_3</uri>
+            <static>true</static>
+            <pose>0 12.5 0 0 0 0</pose>
+        </include>
+        
+        <!-- <include>
+            <name>wall4</name>
+            <uri>model://house_scene_2_wall_4</uri>
+            <static>true</static>
+            <pose>0 12.5 0 0 0 0</pose>
+        </include> -->
+        
+        <!-- <include>
+            <name>wall5</name>
+            <uri>model://house_scene_2_wall_5</uri>
+            <static>true</static>
+            <pose>0 12.5 0 0 0 0</pose>
+        </include> -->
+        
+        <include>
+            <name>wall6</name>
+            <uri>model://house_scene_2_wall_6</uri>
+            <static>true</static>
+            <pose>0 12.5 0 0 0 0</pose>
+        </include>
+        
+        <include>
+            <name>wall7</name>
+            <uri>model://house_scene_2_wall_7</uri>
+            <static>true</static>
+            <pose>0 12.5 0 0 0 0</pose>
+        </include>
+        
+        <include>
+            <name>wall8</name>
+            <uri>model://house_scene_2_wall_8</uri>
+            <static>true</static>
+            <pose>0 12.5 0 0 0 0</pose>
+        </include>
+        
+        <include>
+            <name>wall9</name>
+            <uri>model://house_scene_2_wall_9</uri>
+            <static>true</static>
+            <pose>0 12.5 0 0 0 0</pose>
+        </include>
+        
+        <include>
+            <name>wall10</name>
+            <uri>model://house_scene_2_wall_10</uri>
+            <static>true</static>
+            <pose>0 12.5 0 0 0 0</pose>
+        </include>
+        
+        <!-- <include>
+            <name>wall11</name>
+            <uri>model://house_scene_2_wall_11</uri>
+            <static>true</static>
+            <pose>0 12.5 0 0 0 0</pose>
+        </include> -->
+        
+        <include>
+            <name>wall12</name>
+            <uri>model://house_scene_2_wall_12</uri>
+            <static>true</static>
+            <pose>0 12.5 0 0 0 0</pose>
+        </include>
+        
+        <include>
+            <name>qr2</name>
+            <uri>model://9qr_without_car</uri>
+            <pose>0.035 12.33 0.1 0 0 0</pose>
+        </include>
+        
+        <!-- <include>
+            <name>vehicle_qr3</name>
+            <uri>model://4qr</uri>
+            <pose>-0.1136 17.62 1 0 0 0</pose>
+        </include> -->
+        <include>
+            <name>qr4</name>
+            <uri>model://7qr_without_car</uri>
+            <pose>5.144 17.62 0.1 0 0 0</pose>
+        </include>
+        <include>
+            <name>qr5</name>
+            <uri>model://2qr_without_car</uri>
+            <pose>-5.25 12.49 0.1 0 0 0</pose>
+        </include>
+        
+        <!-- <include>
+            <name>vehicle_qr6</name>
+            <uri>model://10qr</uri>
+            <pose>5.14 12.446 1 0 0 0</pose>
+        </include> -->
+        <include>
+            <name>qr7</name>
+            <uri>model://9qr_without_car</uri>
+            <pose>-3.25 7.55 0.1 0 0 0</pose>
+        </include>
+        <!-- <include>
+            <name>vehicle_qr8</name>
+            <uri>model://8qr</uri>
+            <pose>-0.05 7.55 1 0 0 0</pose>
+        </include> -->
+        <include>
+            <name>qr9</name>
+            <uri>model://7qr_without_car</uri>
+            <pose>4.5 7.5 0.1 0 0 0</pose>
+        </include>
+  
+        <include>
+            <uri>model://platform</uri>
+            <static>true</static>
+            <pose>6.14 6 0.1 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://platform_scnd_v2</uri>
+            <static>true</static>
+            <pose>-5.25 17.63 0.27 0 0 3.14</pose>
+        </include>
+        
+        <include>
+            <name>uav1</name>
+            <uri>model://iris_with_gimbal_1</uri>
+            <pose>6.14 6 0.5 0 0 0</pose>
+        </include>
+       
+     </world>   
+</sdf>
+ 
+ 
+ 
