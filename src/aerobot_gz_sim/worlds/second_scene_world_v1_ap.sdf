@@ -141,8 +141,6 @@
             <pose>0 12.5 0 0 0 0</pose>
         </include>
         
-
-        
         <include>
             <name>wall6</name>
             <uri>model://house_scene_2_wall_6</uri>
@@ -178,8 +176,6 @@
             <pose>0 12.5 0 0 0 0</pose>
         </include>
         
- 
-        
         <include>
             <name>wall12</name>
             <uri>model://house_scene_2_wall_12</uri>
@@ -188,7 +184,6 @@
         </include>
 
         <include>
-
             <name>vehicle_qr3</name>
             <uri>model://3qr</uri>
             <pose>5.144 17.62 1 0 0 0</pose>
@@ -197,12 +192,14 @@
         <include>
             <name>qr4</name>
             <uri>model://11qr_without_car</uri>
+            <static>false</static>
             <pose>-4.25 12.49 0.1 0 0 0</pose>
         </include>
 
         <include>
             <name>qr5</name>
             <uri>model://9qr_without_car</uri>
+            <static>false</static>
             <pose>0.035 12.33 0.1 0 0 0</pose>
         </include>
         
@@ -220,13 +217,13 @@
 
         <include>
             <uri>model://platform</uri>
-            <static>true</static>
+            <static>false</static>
             <pose>-6.1695 12.49 0.27 0 0 0</pose>
         </include>
         
         <include>
             <uri>model://platform_scnd</uri>
-            <static>true</static>
+            <static>false</static>
             <pose>-5.29 17.4187 0.27 0 0 0</pose>
         </include>
 
@@ -319,12 +316,14 @@
         <include>
             <name>qr4</name>
             <uri>model://11qr_without_car</uri>
+            <static>false</static>
             <pose>-3.44 17.56 0.1 0 0 0</pose>
         </include>
 
         <include>
             <name>qr5</name>
             <uri>model://9qr_without_car</uri>
+            <static>false</static>
             <pose>0.035 12.33 0.1 0 0 0</pose>
         </include>
 
@@ -342,20 +341,20 @@
   
         <include>
             <uri>model://platform</uri>
-            <static>true</static>
+            <static>false</static>
             <pose>-6.17 17.5 0.27 0 0 0</pose>
         </include>
         
         <include>
             <uri>model://platform_scnd_config</uri>
-            <static>true</static>
+            <static>false</static>
             <pose>-5.29 12.05 0.27 0 0 0</pose>
         </include>
 
         <include>
             <name>uav1</name>
             <uri>model://iris_with_gimbal_1</uri>
-            <pose>-6.17 17.5 0.36 0 0 0</pose>
+            <pose>-6.17 17.5 0.5 0 0 0</pose>
         </include> -->
        
      </world>   
