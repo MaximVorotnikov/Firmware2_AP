@@ -109,7 +109,8 @@
         </sensor>
       </link>
     </model>
-        
+
+
         <include>
             <uri>model://ground_my</uri>
             <pose relative_to='world'>0 0 0 0 0 0</pose>
@@ -232,39 +233,12 @@
         </include>
         
         <include>
-            <name>figure_square_blue</name>
-            <uri>model://figure_square_blue</uri>
-            <static>true</static>
-            <pose>5.126372 14.444223 0.125 0 0 0</pose>
-        </include>
-        
-        <include>
             <name>figure_square_green</name>
             <uri>model://figure_square_green</uri>
             <static>true</static>
             <pose>-3.5 9 0.124 0 0 0</pose>
         </include>
 
-        <include>
-            <name>figure_square_red</name>
-            <uri>model://figure_square_red</uri>
-            <static>true</static>
-            <pose>-6 10.5 0.12 0 0 0</pose>
-        </include>
-        
-        <include>
-            <name>figure_triangle_blue</name>
-            <uri>model://figure_triangle_blue</uri>
-            <static>true</static>
-            <pose>-5.2 14.2 0.124 0 0 0</pose>
-        </include>
-        
-        <include>
-            <name>figure_triangle_green</name>
-            <uri>model://figure_triangle_green</uri>
-            <static>true</static>
-            <pose>3 18.3 0.124 0 0 0</pose>
-        </include>
 
         <include>
             <name>figure_triangle_red</name>
@@ -274,14 +248,8 @@
         </include>
 
 <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////// config down-->
-        <!-- <include>
-            <name>figure_circle_blue</name>
-            <uri>model://figure_circle_blue</uri>
-            <static>true</static>
-            <pose>0.0 9 0.125 0 0 0</pose>
-        </include>
 
-        <include>
+        <!-- <include>
             <name>figure_circle_green</name>
             <uri>model://figure_circle_green</uri>
             <static>true</static>
@@ -302,12 +270,6 @@
             <pose>5.126372 17.7 0.125 0 0 0</pose>
         </include>
         
-        <include>
-            <name>figure_square_green</name>
-            <uri>model://figure_square_green</uri>
-            <static>true</static>
-            <pose>-2.27 6.01 0.124 0 0 0</pose>
-        </include>
 
         <include>
             <name>figure_square_red</name>
@@ -321,21 +283,8 @@
             <uri>model://figure_triangle_blue</uri>
             <static>true</static>
             <pose>-5.2 14.2 0.124 0 0 0</pose>
-        </include>
-        
-        <include>
-            <name>figure_triangle_green</name>
-            <uri>model://figure_triangle_green</uri>
-            <static>true</static>
-            <pose>-5.49 18.3 0.124 0 0 0</pose>
-        </include>
-
-        <include>
-            <name>figure_triangle_red</name>
-            <uri>model://figure_triangle_red</uri>
-            <static>true</static>
-            <pose>-0.0 18.0 0.124 0 0 0</pose>
         </include> -->
+        
 
 
         <include>
@@ -343,6 +292,7 @@
             <uri>model://iris_with_gimbal_1</uri>
             <pose>-6 7 0.6 0 0 1.57</pose>
         </include>
+
     </world>   
 </sdf>
  

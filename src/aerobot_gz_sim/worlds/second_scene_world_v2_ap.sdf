@@ -142,20 +142,6 @@
             <pose>0 12.5 0 0 0 0</pose>
         </include>
         
-        <!-- <include>
-            <name>wall4</name>
-            <uri>model://house_scene_2_wall_4</uri>
-            <static>true</static>
-            <pose>0 12.5 0 0 0 0</pose>
-        </include> -->
-        
-        <!-- <include>
-            <name>wall5</name>
-            <uri>model://house_scene_2_wall_5</uri>
-            <static>true</static>
-            <pose>0 12.5 0 0 0 0</pose>
-        </include> -->
-        
         <include>
             <name>wall6</name>
             <uri>model://house_scene_2_wall_6</uri>
