@@ -355,7 +355,7 @@
         </include>
         
         <include>
-            <uri>model://platform_scnd_v2</uri>
+            <uri>model://platform_scnd_config</uri>
             <static>false</static>
             <pose>-5.25 17.63 0.27 0 0 3.14</pose>
         </include>
