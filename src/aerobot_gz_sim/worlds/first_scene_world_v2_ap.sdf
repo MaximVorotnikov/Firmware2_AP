@@ -33,22 +33,13 @@
       <sky></sky>
     </scene>
 
-    <!-- <spherical_coordinates>
+    <spherical_coordinates>
       <latitude_deg>-35.363262</latitude_deg>
       <longitude_deg>149.165237</longitude_deg>
       <elevation>584</elevation>
       <heading_deg>0</heading_deg>
       <surface_model>EARTH_WGS84</surface_model>
-    </spherical_coordinates> -->
-
-        <spherical_coordinates>
-            <surface_model>EARTH_WGS84</surface_model>
-            <world_frame_orientation>ENU</world_frame_orientation>
-            <latitude_deg>47.397971057728974</latitude_deg>
-            <longitude_deg> 8.546163739800146</longitude_deg>
-            <elevation>0</elevation>
-        </spherical_coordinates>
-
+    </spherical_coordinates>
 
     <light type="directional" name="sun">
       <cast_shadows>true</cast_shadows>
@@ -67,51 +58,6 @@
     <model name="axes">
       <static>1</static>
       <link name="link">
-        <visual name="r">
-          <cast_shadows>0</cast_shadows>
-          <pose>5 0 0.1 0 0 0</pose>
-          <geometry>
-            <box>
-              <size>10 0.01 0.01</size>
-            </box>
-          </geometry>
-          <material>
-            <ambient>1 0 0 0.8</ambient>
-            <diffuse>1 0 0 0.8</diffuse>
-            <emissive>1 0 0 0.8</emissive>
-            <specular>0.5 0.5 0.5 0.8</specular>
-          </material>
-        </visual>
-        <visual name="g">
-          <cast_shadows>0</cast_shadows>
-          <pose>0 5 0.1 0 0 0</pose>
-          <geometry>
-            <box>
-              <size>0.01 10 0.01</size>
-            </box>
-          </geometry>
-          <material>
-            <ambient>0 1 0 0.8</ambient>
-            <diffuse>0 1 0 0.8</diffuse>
-            <emissive>0 1 0 0.8</emissive>
-            <specular>0.5 0.5 0.5 0.8</specular>
-          </material>
-        </visual>
-        <visual name="b">
-          <cast_shadows>0</cast_shadows>
-          <pose>0 0 5.1 0 0 0</pose>
-          <geometry>
-            <box>
-              <size>0.01 0.01 10</size>
-            </box>
-          </geometry>
-          <material>
-            <ambient>0 0 1 0.8</ambient>
-            <diffuse>0 0 1 0.8</diffuse>
-            <emissive>0 0 1 0.8</emissive>
-            <specular>0.5 0.5 0.5 0.8</specular>
-          </material>
-        </visual>
         <sensor name="navsat_sensor" type="navsat">
           <always_on>1</always_on>
           <update_rate>1</update_rate>
