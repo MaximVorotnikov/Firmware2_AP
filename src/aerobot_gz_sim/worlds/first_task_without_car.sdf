@@ -127,7 +127,7 @@
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////// test-->
 
 
-        <include>
+        <!-- <include>
             <name>qr1</name>
             <uri>model://3qr_without_car</uri>
             <static>false</static>
@@ -178,7 +178,7 @@
             <name>uav1</name>
             <uri>model://iris_with_gimbal_1</uri>
             <pose>5 5 1 0 0 -1.57</pose>
-        </include>
+        </include> -->
 
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////// additional map-->
 
@@ -237,7 +237,7 @@
 
 <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////// credit map-->
 
-        <!-- <include>
+        <include>
             <name>qr1</name>
             <uri>model://3qr_without_car</uri>
             <static>false</static>
@@ -287,8 +287,8 @@
         <include>
             <name>uav1</name>
             <uri>model://iris_with_gimbal_1</uri>
-            <pose>-5.5 -5 1 0 0 -1.57</pose>
-        </include> -->
+            <pose>-5.5 -5 1 0 0 1.57</pose>
+        </include>
 
 
     </world>   
