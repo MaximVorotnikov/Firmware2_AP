@@ -26,7 +26,7 @@
       <name>laser_rangefinder</name>
     </include>
 
-    <include merge='true'>
+    <!-- <include merge='true'>
       <uri>model://depth_cam_drone</uri>
       <pose degrees="true">.2 .0 .01 0 0 0</pose>
       <name>depth_cam_drone</name>
@@ -34,7 +34,7 @@
     <joint name="CameraDepthForwardJoint1" type="fixed">
       <parent>base_link</parent>
       <child>depth_cam_drone/base_link</child> 
-    </joint>
+    </joint> -->
 
     <joint name="CameraForwardJoint1" type="fixed">
       <parent>base_link</parent>
