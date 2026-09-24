@@ -7,7 +7,7 @@
                 <pose>0 12.5 0 0 0 0</pose>
                 <geometry>
                     <mesh>
-                        <uri>model://house_scene_1_walls_out/meshes/scene_walls_out.dae</uri>
+                        <uri>meshes/scene_walls_out.dae</uri>
                     </mesh>
                 </geometry>
             </collision>
@@ -15,7 +15,7 @@
               <pose>0 12.5 0 0 0 0</pose>
               <geometry>
               <mesh>
-                 <uri>model://house_scene_1_walls_out/meshes/scene_walls_out.dae</uri>
+                 <uri>meshes/scene_walls_out.dae</uri>
               </mesh>
               </geometry>
              </visual>
@@ -23,7 +23,7 @@
                 <pose>0 12.5 0 0 0 0</pose>
                 <geometry>
                     <mesh>
-                        <uri>model://house_scene_1_walls_out/meshes/house_flor_wallpapers.dae</uri>
+                        <uri>meshes/house_flor_wallpapers.dae</uri>
                     </mesh>
                 </geometry>
             </collision>
@@ -31,7 +31,7 @@
               <pose>0 12.5 0 0 0 0</pose>
               <geometry>
               <mesh>
-                 <uri>model://house_scene_1_walls_out/meshes/house_flor_wallpapers.dae</uri>
+                 <uri>meshes/house_flor_wallpapers.dae</uri>
               </mesh>
               </geometry>
              </visual>       

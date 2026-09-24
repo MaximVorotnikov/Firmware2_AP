@@ -7,7 +7,7 @@
                 <pose>0 0 0 0 0 0</pose>
                 <geometry>
                     <mesh>
-                        <uri>model://figure_triangle_red/meshes/figure_triangle_red.dae</uri>
+                        <uri>meshes/figure_triangle_red.dae</uri>
                         <scale>0.15 0.15 0.15</scale>
                     </mesh>
                 </geometry>
@@ -16,7 +16,7 @@
                 <pose>0 0 0 0 0 0</pose>
                 <geometry>
                     <mesh>
-                        <uri>model://figure_triangle_red/meshes/figure_triangle_red.dae</uri>
+                        <uri>meshes/figure_triangle_red.dae</uri>
                         <scale>0.15 0.15 0.15</scale>
                     </mesh>
                 </geometry>
