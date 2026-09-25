@@ -22,7 +22,7 @@ def generate_launch_description():
         PythonLaunchDescriptionSource(
             os.path.join(pkg_ros_gz_sim, 'launch', 'gz_sim.launch.py')),
         launch_arguments={
-            'gz_args': '-r third_scene_world_test_bez_razryva.sdf'
+            'gz_args': '-r third_scene_world_test.sdf'
         }.items(),
     )
 
@@ -36,6 +36,19 @@ def generate_launch_description():
     )
 
     ld.add_action(spawn_agressivniy_drone1)
+
+    mavros_node = Node(
+        package='mavros',
+        executable='mavros_node',
+        output='screen',
+        parameters=[{
+            'fcu_url': 'udp://:14591@',
+            'tgt_system': 1
+        }],
+        namespace='uav1'
+    )
+
+    ld.add_action(mavros_node)
 
     bridge = Node(
         package='ros_gz_bridge',
